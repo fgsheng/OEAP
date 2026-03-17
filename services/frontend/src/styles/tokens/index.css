@@ -1,0 +1,14 @@
+@import './base/layout.css';
+
+:root {
+  --color-bg: #0b0f17;
+  --color-surface: #131a24;
+  --color-surface-alt: #1a2332;
+  --color-border: #243244;
+  --color-text-primary: #f2f4f8;
+  --color-text-secondary: #b3c0d4;
+  --color-accent: #6ea8ff;
+  --color-accent-soft: rgba(110, 168, 255, 0.16);
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.24);
+  --font-sans: 'Inter', 'SF Pro Text', system-ui, sans-serif;
+}
