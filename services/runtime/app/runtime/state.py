@@ -56,6 +56,7 @@ class InMemoryStateStore(StateStore):
         return event
 
     def list_events(self, run_id: Optional[str] = None) -> Iterable[RunEvent]:
-        if not run_id:
-            return list(self._events.values())
-        return [event for event in self._events.values() if event.run_id == run_id]
+        events = list(self._events.values())
+        if run_id:
+            events = [event for event in events if event.run_id == run_id]
+        return sorted(events, key=lambda item: item.created_at)

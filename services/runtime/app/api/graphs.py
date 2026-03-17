@@ -1,8 +1,12 @@
 from __future__ import annotations
 
+import uuid
+
 from fastapi import APIRouter, HTTPException
 
 from .schemas import GraphCreate, GraphResponse
+from .audit import audit_store
+from ..runtime.audit import AuditEvent
 from ..runtime.models import GraphSpec, GraphRegistry
 
 router = APIRouter(prefix="/graphs", tags=["graphs"])
@@ -32,9 +36,23 @@ def create_graph(payload: GraphCreate) -> GraphResponse:
         name=payload.name,
         description=payload.description,
         version=payload.version,
+        package_id=payload.package_id,
+        tenant_id=payload.tenant_id,
+        actor_id=payload.actor_id,
         metadata=payload.metadata,
     )
     graphs_service.registry.register(graph)
+    audit_store.append(
+        AuditEvent(
+            audit_id=f"audit-{uuid.uuid4().hex[:10]}",
+            actor_id=payload.actor_id,
+            tenant_id=payload.tenant_id,
+            action="runtime.graph.registered",
+            entity_type="graph",
+            entity_id=graph.graph_id,
+            after=graph.__dict__,
+        )
+    )
     return GraphResponse(**graph.__dict__)
 
 

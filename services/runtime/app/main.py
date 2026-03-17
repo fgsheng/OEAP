@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from fastapi import FastAPI
 
-from .api import events, graphs, runs
+from .api import audit, events, graphs, runs
 from .core.config import settings
 
 app = FastAPI(
@@ -14,6 +14,7 @@ app = FastAPI(
 app.include_router(graphs.router, prefix="/api/v1")
 app.include_router(runs.router, prefix="/api/v1")
 app.include_router(events.router, prefix="/api/v1")
+app.include_router(audit.router, prefix="/api/v1")
 
 
 @app.get("/health")

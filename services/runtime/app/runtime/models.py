@@ -11,6 +11,9 @@ class GraphSpec:
     name: str
     description: Optional[str] = None
     version: str = "v1"
+    package_id: Optional[str] = None
+    tenant_id: Optional[str] = None
+    actor_id: Optional[str] = None
     metadata: Dict[str, Any] = field(default_factory=dict)
     created_at: datetime = field(default_factory=datetime.utcnow)
 
@@ -21,6 +24,10 @@ class RunSpec:
     graph_id: str
     input: Dict[str, Any]
     status: str = "queued"
+    tenant_id: Optional[str] = None
+    actor_id: Optional[str] = None
+    trace_id: Optional[str] = None
+    metadata: Dict[str, Any] = field(default_factory=dict)
     created_at: datetime = field(default_factory=datetime.utcnow)
     updated_at: datetime = field(default_factory=datetime.utcnow)
     error: Optional[str] = None
