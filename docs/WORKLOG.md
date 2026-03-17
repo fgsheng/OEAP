@@ -9,3 +9,4 @@
 - 创建后端/前端工程骨架、Dockerfiles、应用编排 compose。
 - 增加专家输入引导 API 与前端 MVP 页面。
 - 添加产品包结构/构建流程与运行时基础 API 骨架。
+- 由专业角色重做：产品目标/MVP、流程门控、架构、MCP、LangGraph、UI 指导。
