@@ -13,9 +13,11 @@
 - 落盘：RBAC/ABAC 与 Gate/Loop 规格。
 - 落盘：端到端验收报告草案与运行验收检查表。
 - 落盘：API 接口验收清单。
+- 落盘：能源专家访谈 CUI 对话脚本与结构化输入。
 - 新增 LangGraph 运行时服务骨架（FastAPI 入口、graphs/runs/events API、engine/scheduler/state 抽象、基础配置与 README）。
 - 补充 LangGraph 运行时联调方案：新增 runtime/audit 抽象、SSE/WebSocket 事件流接口、审计 API 与对接说明。
 - 前端落地：新增 layout tokens、AppShell、Sidebar/Topbar、四大页面骨架与路由框架。
 - 后端重构：按 api/application/domain/infrastructure/common 包级模块化重构 ExpertIntake，新增 JPA Entity/Repository、DTO 分层、ApiResponse/ErrorCode，保持原接口路径。
 - 前端深化：专家输入缺失项回问逻辑与交互补充、运营控制台联调占位表格、产品包详情与运行时执行页骨架。
 - 新增产品包 Git 版本化骨架：目录结构生成器、manifest/changelog/tag 规则、create/publish/rollback API 骨架与架构文档。
+- 新增 CUI（Textual）原型：services/cui 目录、App 入口、专家沉淀/真实用户运行/销售工程师脚本三套引导流程，支持结构化 JSON 保存。
