@@ -21,4 +21,5 @@
 - 前端深化：专家输入缺失项回问逻辑与交互补充、运营控制台联调占位表格、产品包详情与运行时执行页骨架。
 - 新增产品包 Git 版本化骨架：目录结构生成器、manifest/changelog/tag 规则、create/publish/rollback API 骨架与架构文档。
 - 新增 CUI（Textual）原型：services/cui 目录、App 入口、专家沉淀/真实用户运行/销售工程师脚本三套引导流程，支持结构化 JSON 保存。
+- 落盘：能源客户方案草案与 CUI 字段映射表（docs/verification/evidence/proposal-draft.md）。
 - 落盘：方案草案与 CUI 字段对齐版本（`docs/verification/evidence/proposal-draft.md`），含字段映射表与证据索引。
