@@ -14,3 +14,4 @@
 - 补充 LangGraph 运行时联调方案：新增 runtime/audit 抽象、SSE/WebSocket 事件流接口、审计 API 与对接说明。
 - 前端落地：新增 layout tokens、AppShell、Sidebar/Topbar、四大页面骨架与路由框架。
 - 后端重构：按 api/application/domain/infrastructure/common 包级模块化重构 ExpertIntake，新增 JPA Entity/Repository、DTO 分层、ApiResponse/ErrorCode，保持原接口路径。
+- 新增产品包 Git 版本化骨架：目录结构生成器、manifest/changelog/tag 规则、create/publish/rollback API 骨架与架构文档。
