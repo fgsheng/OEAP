@@ -10,6 +10,7 @@
 - 增加专家输入引导 API 与前端 MVP 页面。
 - 添加产品包结构/构建流程与运行时基础 API 骨架。
 - 由专业角色重做：产品目标/MVP、流程门控、架构、MCP、LangGraph、UI 指导。
+- 落盘：RBAC/ABAC 与 Gate/Loop 规格。
 - 新增 LangGraph 运行时服务骨架（FastAPI 入口、graphs/runs/events API、engine/scheduler/state 抽象、基础配置与 README）。
 - 补充 LangGraph 运行时联调方案：新增 runtime/audit 抽象、SSE/WebSocket 事件流接口、审计 API 与对接说明。
 - 前端落地：新增 layout tokens、AppShell、Sidebar/Topbar、四大页面骨架与路由框架。
