@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PageHeader from '../components/ui/PageHeader'
 import Card from '../components/ui/Card'
 
@@ -41,13 +42,23 @@ export default function ProductPack() {
       </section>
 
       <section className="section" style={{ marginTop: 20 }}>
-        <Card title="发布流程">
-          <ul className="list">
-            <li>资产打包与版本生成</li>
-            <li>审批/审计规则挂载</li>
-            <li>运行时目标环境绑定</li>
-          </ul>
-        </Card>
+        <div className="split-grid">
+          <Card title="发布流程">
+            <ul className="list">
+              <li>资产打包与版本生成</li>
+              <li>审批/审计规则挂载</li>
+              <li>运行时目标环境绑定</li>
+            </ul>
+          </Card>
+          <Card
+            title="产品包详情骨架"
+            description="进入单包详情页查看依赖、版本与发布节奏。"
+          >
+            <Link className="button" to="/product-pack/detail">
+              查看详情页
+            </Link>
+          </Card>
+        </div>
       </section>
     </div>
   )
