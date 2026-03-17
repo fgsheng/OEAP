@@ -1,20 +1,20 @@
-# enterprise-ai-platform
+# enterprise-ai-platform（OEAP）
 
-Enterprise-grade platform that turns expert natural-language practice into ontology-based skills and MCP tools, packages them as versioned product bundles, and runs them in a multi-agent runtime.
+企业级平台产品：将业务专家的自然语言实践沉淀为本体驱动的技能（skill）与 MCP 工具，并以“产品包”形式进行 Git 版本化管理，再加载到多智能体运行时中提供智能服务。
 
-## Project Goals (draft)
-- Expert-guided input -> validated structured knowledge -> ontology-based skills + MCP tools
-- Package skills/tools into versioned product bundles stored in Git
-- Runtime loads bundles into an ontology-driven multi-agent execution environment
-- Roles: Expert, Operator, End User
-- Enterprise-grade security, governance, observability, and compliance
+## 项目目标（初稿）
+- 专家引导式输入 → 结构化知识 → 本体技能 + MCP 工具
+- 形成可复用、可版本化的产品包（Git 管理）
+- 运行时加载产品包，基于本体驱动多智能体协同
+- 角色：专家 / 运营 / 普通用户
+- 企业级安全、治理、观测与合规
 
-## Repo Structure (initial)
-- docs/  — specs, architecture, workflows, UX, decisions
-- services/ — backend services
-- packages/ — shared libraries / agent runtimes
-- infra/ — docker/compose, IaC, deployment
-- logs/ — design/decision logs
+## 目录结构
+- docs/  — 规格、架构、流程、UX、决策记录
+- services/ — 后端服务
+- packages/ — 共享库 / 运行时
+- infra/ — Docker/Compose、部署
+- logs/ — 过程与决策日志
 
-## Status
-- Scoping & architecture phase
+## 状态
+- 需求与架构阶段

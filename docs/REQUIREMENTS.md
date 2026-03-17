@@ -1,47 +1,47 @@
-# Requirements (Draft)
+# 需求说明（初稿）
 
-## Roles
-- Expert: provides domain practice in natural language; system guides missing info.
-- Operator: manages experts, packages, analytics, governance.
-- End User: consumes packaged intelligent products.
+## 角色
+- 专家：用自然语言描述业务实践；系统引导补齐关键信息。
+- 运营：管理专家、产品包、治理与分析。
+- 普通用户：使用已打包的智能产品。
 
-## Core Capabilities
-1) Expert Input & Guidance
-- Guided, stepwise capture of domain practice.
-- Detect missing/ambiguous info, prompt for confirmation.
-- Validate for completeness and quality.
+## 核心能力
+1) 专家输入与引导
+- 分步引导式采集
+- 缺失/歧义信息提示与确认
+- 完整性与质量校验
 
-2) Knowledge -> Skills -> MCP Tools
-- Convert expert narratives into ontology-backed skills.
-- Extract operations into MCP interfaces; map to existing system CLI -> MCP.
+2) 知识 → 技能 → MCP 工具
+- 将专家叙述转为本体驱动技能
+- 从操作流程中提取 MCP 接口；支持 CLI → MCP 适配
 
-3) Product Package
-- Bundle skills + MCP tools + ontology into a versioned product package.
-- Store packages in Git with metadata, changelog, and provenance.
+3) 产品包
+- 技能 + MCP + 本体组成产品包
+- Git 版本化管理，含元数据、变更记录与溯源
 
-4) Runtime
-- Load package into a multi-agent runtime.
-- Ontology-driven orchestration.
-- Observability, audit logs, and safety guardrails.
+4) 运行时
+- 多智能体运行时加载产品包
+- 基于本体驱动协同执行
+- 全链路观测、审计与安全控制
 
-5) Account & Identity
-- Independent account system.
-- Future federation (e.g., DingTalk).
-- Initial test: separate accounts for Expert/Operator/End User.
+5) 账号体系
+- 独立账号体系
+- 未来支持外部身份（如钉钉）对接
+- 初期专家/运营/普通用户独立账号
 
-6) Operations Console
-- Expert directory and profiles.
-- Package inventory, versions, usage metrics.
-- Industry/sector classification.
+6) 运营控制台
+- 专家目录与画像
+- 产品包清单、版本与使用情况
+- 行业目录分类与复用治理
 
-7) Design
-- Enterprise-grade, tech-forward UI.
-- Reference enterprise SaaS patterns.
+7) 设计风格
+- 企业级科技风
+- 参考成熟 SaaS 设计体系
 
-## Non-Functional
-- Security, compliance, scalability, reliability.
-- Full audit trail of expert input -> skill -> package -> runtime execution.
-- Dockerized data stores (no local install).
+## 非功能要求
+- 安全、合规、可靠、可扩展
+- 完整审计链路：输入 → 技能 → 包 → 运行
+- 数据组件全 Docker 化
 
-## Recording
-- All role outputs and process artifacts must be stored in docs/ and logs/.
+## 记录要求
+- 所有角色输出与过程产物统一落盘至 docs/ 与 logs/

@@ -1,16 +1,16 @@
-# Local Development (Draft)
+# 本地开发（初稿）
 
-## Start Dependencies
+## 启动依赖
 ```bash
 cd infra
 docker compose up -d
 ```
 
-## Health Checks
+## 健康检查
 - Postgres: localhost:5432
 - Neo4j: http://localhost:7474
 - Qdrant: http://localhost:6333/healthz
 - Redis: localhost:6379
 
-## Notes
-Backend and frontend services will be added next.
+## 说明
+后端与前端服务骨架将在下一阶段补齐。

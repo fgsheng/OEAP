@@ -1,21 +1,21 @@
-# Execution Plan (Draft)
+# 执行计划（初稿）
 
-## Phase 0 — Foundations
-- Confirm tech stack and deployment constraints.
-- Define ontology approach (format, storage, versioning).
-- Select agent framework for frontend runtime.
+## 阶段 0 — 基础
+- 明确技术栈与部署约束
+- 本体标准与存储策略
+- 前端 Agent 框架选型（LangGraph）
 
-## Phase 1 — Architecture
-- Service decomposition and data model.
-- MCP tool registry + CLI-to-MCP conversion pipeline.
-- Package format and Git storage strategy.
+## 阶段 1 — 架构
+- 服务拆分与数据模型
+- MCP 注册与 CLI→MCP 适配链路
+- 产品包结构与 Git 管理
 
-## Phase 2 — MVP
-- Expert input UI + guided capture.
-- Package builder (skills + MCP + ontology).
-- Runtime loader + basic multi-agent execution.
+## 阶段 2 — MVP
+- 专家输入引导界面
+- 产品包构建器（技能 + MCP + 本体）
+- 运行时加载与基础协同
 
-## Phase 3 — Enterprise Hardening
-- Auth, RBAC, audit logs.
-- Observability + SLOs.
-- Ops console & analytics.
+## 阶段 3 — 企业级增强
+- 认证、权限、审计
+- 观测与 SLO
+- 运营后台与分析

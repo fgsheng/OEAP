@@ -1,29 +1,29 @@
-# System Overview (Draft)
+# 系统概览（初稿）
 
-## Core Concepts
-- **Expert Guided Capture**: guided natural-language input to capture domain practice.
-- **Ontology-backed Skills**: structured skills derived from validated expert input.
-- **MCP Tooling**: operations extracted from expert workflows and mapped to MCP interfaces, including CLI-to-MCP wrappers for legacy systems.
-- **Product Package**: versioned bundle of ontology + skills + MCP tools in Git.
-- **Runtime**: multi-agent execution platform that loads packages and orchestrates agents with ontology context.
+## 核心概念
+- **专家引导式输入**：分步采集与校验专家实践
+- **本体驱动技能**：结构化知识映射为可执行技能
+- **MCP 工具化**：操作流程抽取为 MCP 接口，支持 CLI→MCP 适配
+- **产品包**：本体 + 技能 + MCP 组合并 Git 版本化
+- **运行时**：多智能体协同执行，基于本体驱动
 
-## High-Level Architecture
-1. **Expert Intake Service** — guided capture, validation, and confirmation loops.
-2. **Knowledge & Ontology Service** — stores domain entities, relations, and rules.
-3. **Skill Builder Service** — transforms validated inputs into skills and tests.
-4. **MCP Registry & Adapter Service** — maintains MCP interfaces and CLI wrappers.
-5. **Package Service** — builds, versions, and stores product packages in Git.
-6. **Runtime Orchestrator** — loads packages and runs multi-agent workflows (LangGraph).
-7. **Ops Console** — expert management, package inventory, usage analytics.
-8. **Identity & Access** — standalone auth now, federated later (DingTalk).
+## 高层架构
+1. 专家输入服务 — 引导、校验、确认
+2. 知识与本体服务 — 实体/关系/规则存储
+3. 技能构建服务 — 结构化与测试
+4. MCP 注册与适配服务 — 工具注册、CLI 适配
+5. 产品包服务 — 构建、版本、发布
+6. 运行时编排 — LangGraph 驱动
+7. 运营控制台 — 专家与产品包管理
+8. 身份与权限 — 独立账号 + 后续对接
 
-## Data Stores
-- Postgres: primary relational data
-- Neo4j: ontology graph
-- Qdrant: vector search
-- Redis: cache/session
+## 数据存储
+- Postgres：关系数据
+- Neo4j：本体图谱
+- Qdrant：向量检索
+- Redis：缓存/会话
 
-## Next
-- Confirm service boundaries and API contracts
-- Define package schema and Git layout
-- Define MCP adapter lifecycle
+## 下一步
+- 明确 API 合约与数据模型
+- 定义产品包 schema 与 Git 布局
+- 定义 MCP 适配生命周期

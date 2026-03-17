@@ -1,7 +1,7 @@
-# Worklog
+# 工作日志
 
 ## 2026-03-17
-- Initialized repository structure.
-- Captured high-level requirements for enterprise-ai-platform.
-- Added docker-compose for Postgres/Neo4j/Qdrant/Redis.
-- Drafted system overview, multi-agent workflow, and local dev runbook.
+- 初始化项目结构与 Git 仓库。
+- 记录需求说明与执行计划。
+- 生成 Docker Compose（Postgres/Neo4j/Qdrant/Redis）。
+- 输出系统概览、多智能体流程、本地运行手册。
