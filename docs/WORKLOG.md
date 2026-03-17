@@ -6,3 +6,4 @@
 - 生成 Docker Compose（Postgres/Neo4j/Qdrant/Redis）。
 - 输出系统概览、多智能体流程、本地运行手册。
 - 完成：MCP接口规范、LangGraph运行时、总体架构与集成模式、服务拆分与数据模型、专家输入沉淀流程。
+- 创建后端/前端工程骨架、Dockerfiles、应用编排 compose。

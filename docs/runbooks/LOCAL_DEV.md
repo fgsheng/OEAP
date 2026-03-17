@@ -13,4 +13,4 @@ docker compose up -d
 - Redis: localhost:6379
 
 ## 说明
-后端与前端服务骨架将在下一阶段补齐。
+后端与前端服务骨架已就绪。

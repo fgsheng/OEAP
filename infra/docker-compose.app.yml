@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ../services/backend
+    container_name: oeap-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - neo4j
+      - qdrant
+      - redis
+
+  frontend:
+    build: ../services/frontend
+    container_name: oeap-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
